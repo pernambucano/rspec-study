@@ -1,0 +1,10 @@
+version: "3"
+services:
+  webapp:
+    image: ruby:2.5
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "3000:3000"
+
